@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Everthing above is reset. DONT CHANGE*/
+
+body {
+    background-color: rgba(11, 11, 11, .2);
+}
+header {
+    height: 140px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 5px 0 25px 0;
+    background-color: #666363;
+    background: -webkit-linear-gradient(#000000, #939393);
+    background: linear-gradient(#000000, #939393);
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+button {
+    height: 85px;
+    width: 65px;
+    display: inline;
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: white;
+    background: -webkit-linear-gradient(#000000, #4f4e4e);
+    background: linear-gradient(#000000, #4f4e4e);
+    border: 0 none;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 #000;
+    box-shadow: 0 5px 0 #000, 0 5px 0 #000, 0 6px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    margin: 10px 2px 5px 2px;
+}
+button {
+    outline: 0;
+}
+button:active {
+    transition: ease .3ms all;
+    background: -webkit-linear-gradient(#4f4e4e, #000000);
+    background: linear-gradient(##4f4e4e, #000000);
+}
+.calculator {
+    float: left;
+    width: 470px;
+    height: 580px;
+    margin: 50px 100px 50px 200px;
+    background-color: #666363;
+    border: 5px solid grey;
+    border-radius: 50px;
+    box-shadow: 0 5px 0 #000, 0 10px 0 #262222, 0 8px 10px rgba(0, 0, 0, 0.9);
+}
+.numbers {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: auto;
+    float: left;
+}
+.operators {
+    margin-top: 20px;
+    float: left;
+    margin-left: 15px;
+}
+.display {
+    margin: auto;
+    color: #4ae847;
+    background-color: black;
+    border: 5px solid #564c4c;
+    width: 300px;
+    height: 90px;
+}
+#equals {
+    width: 138px;
+}
+.display p {
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    padding: 3px;
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+}
+.calctop {
+    background-color: #4f4e4e;
+    height: 95px;
+    border: 5px solid #564c4c;
+    border-radius: 45px 45px 0 0;
+}
+#clearlog {
+    width: 180px;
+}
+#clear {
+    color: red;
+}
+.printer {
+    border-radius: 20px 20px 0 0;
+    float: left;
+    margin-top: 300px;
+    border: 1px solid black;
+    background-color: #4f4e4e;
+    box-shadow: -2px 3px 3px #3f3d3d;
+    height: 300px;
+    width: 450px;
+}
+.printer h3 {
+    position: relative;
+    margin-left: 10px;
+    top: 265px;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+}
+.printerpaper {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    top: -350px;
+}
+ul {
+    margin: 5px;
+}
+li {
+    float: left;
+    font-size: 25px;
+    margin: 5px;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+}

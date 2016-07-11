@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app='claculatorApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script src="angular.min.js"></script>
+    <script src="client.js"></script>
+  </head>
+  <body ng-controller='MainController'>
+    <section="wrapper">
+      <header>
+        <h1>Weekend Project # 3</h1>
+        <h1>AngularJS calculator</h1>
+      </header>
+      <div class="calculator">
+        <div class="calctop">
+          <div class="display">
+            <p>
+              {{firstnumber}}{{displayoperator}}{{secondnumber}}
+            </p>
+            <p>
+              {{total}}
+            </p>
+          </div>
+        </div>
+        <div class="numbers">
+          <p>
+            <button id="7" ng-click="buttonclicked(7)">7</button>
+            <button id="8" ng-click="buttonclicked(8)">8</button>
+            <button id="9" ng-click="buttonclicked(9)">9</button>
+          </p>
+          <p>
+            <button id="4" ng-click="buttonclicked(4)">4</button>
+            <button id="5" ng-click="buttonclicked(5)">5</button>
+            <button id="6" ng-click="buttonclicked(6)">6</button>
+          </p>
+          <p>
+            <button id="1" ng-click="buttonclicked(1)">1</button>
+            <button id="2" ng-click="buttonclicked(2)">2</button>
+            <button id="3" ng-click="buttonclicked(3)">3</button>
+          </p>
+          <p>
+            <button id="0" ng-click="buttonclicked(0)">0</button>
+            <button id="equals" ng-click="equals()">=</button>
+          </p>
+        </div>
+        <div class="operators">
+          <p>
+            <button id="clearlog" ng-click="clearLog()">Clear Log</button>
+          </p>
+          <p>
+            <button id="percent" ng-click="percentButton()">%</button>
+            <button id="clear" ng-click="cleardisplay()">C</button>
+          </p>
+          <p>
+            <button id="multiply" ng-click="operatorSelected(40)">x</button>
+            <button id="division" ng-click="operatorSelected(50)">/</button>
+          </p>
+          <p>
+            <button id="addition" ng-click="operatorSelected(20)">+</button>
+            <button id="subtraction" ng-click="operatorSelected(30)">-</button>
+          </p>
+        </div>
+      </div>
+      <div class="printer">
+        <h3>printer</h3>
+        <div class="printerpaper">
+          <ul>
+            <li ng-repeat="results in storage track by $index">
+              {{results}}
+           </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </body>
+</html>
