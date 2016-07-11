@@ -15,6 +15,7 @@ angular.module('claculatorApp').controller('MainController', function($scope) {
     var operator = undefined;
     var result = 0;
     var storage = [];
+    var display = [];
 
     $scope.cleardisplay = function() {
         number1 = [];
@@ -25,7 +26,7 @@ angular.module('claculatorApp').controller('MainController', function($scope) {
         delete $scope.displayoperator
         delete $scope.secondnumber
         delete $scope.total
-        tempStored = [];
+
     }
 
     $scope.clearLog = function() {
@@ -87,7 +88,10 @@ angular.module('claculatorApp').controller('MainController', function($scope) {
                 break;
         }
         storage.unshift([number1 + operator + number2 + " = " + result]);
-        $scope.storage = storage;
+
+        display.unshift(storage[0].toString());
+        console.log(display);
+        $scope.storage = display;
 
     }
 
